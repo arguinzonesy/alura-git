@@ -1,0 +1,15 @@
+GIT
+1. Para iniciar, se entra en carpeta desde el codigo y se inicia GIT
+$ git init
+$ git status
+
+2. Empezamos a monitorear index.html
+$ git add idex.html
+or $ git add . (esto es para todos los archivos de la carpeta)
+
+Para dejar de monitorear se usa "git rm --cached <file>"
+
+3. Verificamos la versión y el uso del commit
+$ git config --global user.email "yang.arguinzones@gmail.com"
+$ git config --global user.name "Yang"
+$ git commit -m "Creando archivo index.html con lista de cursos"
