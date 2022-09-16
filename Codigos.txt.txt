@@ -11,5 +11,16 @@ Para dejar de monitorear se usa "git rm --cached <file>"
 
 3. Verificamos la versión y el uso del commit
 $ git config --global user.email "yang.arguinzones@gmail.com"
-$ git config --global user.name "Yang"
+$ git config --global user.name "Yang" (--local cuando se aplique solo a ese proyecto)
 $ git commit -m "Creando archivo index.html con lista de cursos"
+
+4. Para ver los cambios realizados en el commit
+$ git log
+$ git log --online
+$ git log -p
+:q
+
+5. Ignorando archivos, voy a ignorar este mismo por cierto
+Se genera un archivo llamado .gitignore y dentro se coloca las carpetas o archivos a ignorar
+$ git add .gitignore
+$ git commit -m "Se agrega gitignore"
