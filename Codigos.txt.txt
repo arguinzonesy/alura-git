@@ -24,3 +24,15 @@ $ git log -p
 Se genera un archivo llamado .gitignore y dentro se coloca las carpetas o archivos a ignorar
 $ git add .gitignore
 $ git commit -m "Se agrega gitignore"
+
+6. Se crea servidor remoto
+Una carpeta fuera del original y se inicia como servidor git
+$ git init --bare
+
+7. Se ingresa nuevamente a la carpeta de GIT donde esta el codigo
+$ git remote
+$ git remote add servidorlocal C:/Users/NewYang/Desktop/Personal/ONE/servidor/
+
+8. Nuevos usuarios, se crea la carpeta puede ser local o remota y para clonar el repositorio
+$ git clone /c/Users/NewYang/Desktop/Personal/ONE/servidor/ proyecto
+Antes de clonar hay que enviar sobre el repositorio remoto
