@@ -36,3 +36,38 @@ $ git remote add servidorlocal C:/Users/NewYang/Desktop/Personal/ONE/servidor/
 8. Nuevos usuarios, se crea la carpeta puede ser local o remota y para clonar el repositorio
 $ git clone /c/Users/NewYang/Desktop/Personal/ONE/servidor/ proyecto
 Antes de clonar hay que enviar sobre el repositorio remoto
+
+9. Enviar proyecto a servidor remoto
+$ git push servidorlocal master
+Se entra al otro perfil y se mete a la info
+$ git remote rename local servidorlocal
+
+10. Se agrega el repositorio servidor local
+$ git pull servidorlocal master
+
+11. Para enviar al servidor
+$ git push servidorlocal master
+
+12. Para llamar los cambios
+$ git pull servidorlocal master
+$ git log -p
+:q
+
+13. Para colocarlo en servidor gratuito por GitHub
+HTTPS
+$ git remote add origin https://github.com/arguinzonesy/alura-git.git
+$ git branch -M main ** No
+$ git push -u origin main ** No
+$ git push origin master (esta si)
+
+14. Branches - Ramificaciones
+$ git branch
+$ git branch titulo
+$ git checkout titulo
+
+
+
+
+
+
+
