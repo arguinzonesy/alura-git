@@ -64,10 +64,45 @@ $ git push origin master (esta si)
 $ git branch
 $ git branch titulo
 $ git checkout titulo
+$ git checkout - b titulo (resumido)
 
 
+15. Unificar branches
+$ git merge titulo
+:x
 
+16. Actualizando branch
+$ git rebase titulo (mete todo en la unica commit)
 
+LOG -> $ git log --graph (grafico los logs)
 
+17. El "Control + Z" para Git
+$ git restore index.html
+$ git restore --stage index.html (quita si se add)
+Si ya se commitio, se copia el hash del que se quiere deshacer
+$ git revert (hash) :x
+1 - git restore
+2 - git restore --staged
+3 - git revert
 
+18. Guardando para despues, se hizo cambios pero no se comitiaron pero si se requiere guardar en stash
+$ git stash
+$ git stash list (se vera lista de stash)
+$ git stash apply 0
+o se puede aplicar y eliminar de la lista
+$ git stash pop
 
+19. Viajar en el tiempo, se retrocede a unos anteriores
+$ git checkout (hash abreviado) 
+$ git checkout -b NuevaBranch (para poder guardar lo generado)
+
+20. Viendo las modificaciones
+$ git diff (hash)..(otro hash) (ve modificaciones entre un commit y otro)
+$ git diff (solo ve las diferencias sin commit agregado)
+
+21. Tag o versionado  releases - Punto que nunca mas sera editado y a partir de allí sera así
+$ git tag -a v0.1.0 -m "Lanzando la primera versión (BETA) de la aplicación de cursos"
+Luego se envia a servidor GitHub
+$ git remote -v
+$ git push origin main 
+$ git push origin v0.1.0
